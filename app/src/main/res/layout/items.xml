@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    app:strokeColor="@android:color/darker_gray"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75"
+            android:minHeight="200dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:layout_gravity="start|bottom"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_view"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                app:drawableStartCompat="@drawable/baseline_star_24"
+                app:drawableTint="#FFD700"
+                tools:text="100|5" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginVertical="8dp"
+            android:layout_weight="0.25"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_marginBottom="6dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="start"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Product name" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:textSize="14sp"
+                tools:text="Product price" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
